@@ -1,0 +1,9 @@
+﻿namespace csappwithanalyzers_legacy
+{
+    internal static class Program
+    {
+        private static void Main(string[] args)
+        {
+        }
+    }
+}

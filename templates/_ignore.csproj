@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>ProjectsWithAnalyers.Templates</PackageId>
+    <Title>Projects With Analyers Templates</Title>
+    <Authors>s8Usy429</Authors>
+    <Description>Project templates for creating projects with built-in .NET analyzers</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
+
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>Content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*" Exclude="_ignore.csproj;*.nupkg;**\bin\**;**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

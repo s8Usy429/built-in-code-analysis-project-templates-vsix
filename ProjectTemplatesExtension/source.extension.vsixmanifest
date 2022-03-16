@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="BuiltInCodeAnalysisProjectTemplates.01bb549e-ba73-413d-bf63-2319098daf73" Version="1.0.0" Language="en-US" Publisher="s8Usy429" />
+        <DisplayName>Built-in Code Analysis Project Templates</DisplayName>
+        <Description xml:space="preserve">Adds new .NET project templates with built-in code analysis to Visual Studio (.NET analyzers, SonarAnalyzer, Roslynator, FluentAssertions.Analyzers, xunit.analyzers)</Description>
+        <MoreInfo>https://github.com/s8Usy429/built-in-code-analysis-project-templates-vsix/blob/main/README.md</MoreInfo>
+        <License>LICENSE</License>
+        <GettingStartedGuide>https://github.com/s8Usy429/built-in-code-analysis-project-templates-vsix/blob/main/README.md#usage</GettingStartedGuide>
+        <Icon>icon.png</Icon>
+        <Tags>dotnet;templates;project-templates;code-analysis;analyzers</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="packagedef.pkgdef" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
