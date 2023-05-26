@@ -1,9 +1,11 @@
-﻿namespace csappwithanalyzers
+﻿namespace csappwithanalyzers;
+
+using System.Threading.Tasks;
+
+internal static class Program
 {
-    internal static class Program
+    private static async Task Main(string[] args)
     {
-        private static void Main(string[] args)
-        {
-        }
+        await Task.CompletedTask;
     }
 }

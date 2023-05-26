@@ -26,10 +26,11 @@
             "choices": [
                 { "choice": "netcoreapp3.1" },
                 { "choice": "net5.0" },
-                { "choice": "net6.0" }
+                { "choice": "net6.0" },
+                { "choice": "net7.0" }
             ],
-            "replaces": "net6.0",
-            "defaultValue": "net6.0"
+            "replaces": "net7.0",
+            "defaultValue": "net7.0"
         }
     },
     "primaryOutputs": [
