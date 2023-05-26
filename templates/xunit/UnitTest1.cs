@@ -1,15 +1,16 @@
-using FluentAssertions;
-using Xunit;
+namespace xtestproj;
+
 using AutoMoxture.XUnit;
 
-namespace xtestproj
+using FluentAssertions;
+
+using Xunit;
+
+public class UnitTest1 : AutoMoxtureTest<object>
 {
-    public class UnitTest1 : AutoMoxtureTest<object>
+    [Fact]
+    public void Test1()
     {
-        [Fact]
-        public void Test1()
-        {
-            Sut.Should().NotBeNull();
-        }
+        this.Sut.Should().NotBeNull();
     }
 }
