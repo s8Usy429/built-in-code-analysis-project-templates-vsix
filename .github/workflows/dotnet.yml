@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - name: Checkout the default branch
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3.2.0
+        with:
+          dotnet-version: 7.x.x
+
+      - name: Pack
+        run: dotnet pack -c Release templates/_ignore.csproj
+
+      - name: Publish to GitHub
+        run: dotnet nuget push templates/bin/Release/*.nupkg -s https://nuget.pkg.github.com/s8Usy429/index.json -k ${{secrets.GITHUB_TOKEN}}
