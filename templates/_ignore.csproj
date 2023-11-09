@@ -7,7 +7,7 @@
     <Title>Projects With Analyers Templates</Title>
     <Authors>s8Usy429</Authors>
     <Description>Project templates for creating projects with built-in .NET analyzers</Description>
-    <PackageTags>dotnet-new;templates</PackageTags>
+    <PackageTags>dotnet-new;templates;analyzers</PackageTags>
 
     <TargetFramework>netstandard2.1</TargetFramework>
 
