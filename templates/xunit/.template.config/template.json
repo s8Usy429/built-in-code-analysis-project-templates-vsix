@@ -7,8 +7,9 @@
         "type": "project"
     },
     "identity": "dbac738f-8045-4982-a13f-ffa912a798ec",
-    "shortName": "xunitwithanalyzers",
-    "name": "xUnit Test Project with built-in code analysis",
+    "groupIdentity": "cstest",
+    "shortName": "cstest",
+    "name": "xUnit test project with built-in code analysis",
     "description": "A project for writing tests with recommended code analyzers already installed (.NET analyzers, SonarAnalyzer, Roslynator and FluentAssertions.Analyzers). AutoFixture, AutoFixture.AutoMoq and FluentAssertions are also conveniently installed.",
     "sourceName": "xtestproj",
     "defaultName": "Tests",

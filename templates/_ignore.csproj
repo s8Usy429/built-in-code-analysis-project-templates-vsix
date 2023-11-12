@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageVersion>1.0.0</PackageVersion>
-    <PackageId>ProjectsWithAnalyers.Templates</PackageId>
+    <PackageId>BuiltInAnalyers.ProjectTemplates</PackageId>
     <Title>Projects With Analyers Templates</Title>
     <Authors>s8Usy429</Authors>
     <Description>Project templates for creating projects with built-in .NET analyzers</Description>

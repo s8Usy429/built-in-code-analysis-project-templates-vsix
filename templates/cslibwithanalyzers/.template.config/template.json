@@ -7,9 +7,9 @@
         "type": "project"
     },
     "identity": "028bceaf-a00e-440b-911b-e53ad6c79fd8",
-    "groupIdentity": "libwithanalyzers",
-    "shortName": "libwithanalyzers",
-    "name" : "Class Library with built-in code analysis",
+    "groupIdentity": "cslib",
+    "shortName": "cslib",
+    "name" : "Class library with built-in code analysis",
     "description": "A project for creating a class library with recommended code analyzers already installed (.NET analyzers, SonarAnalyzer and Roslynator)",
     "sourceName": "cslibwithanalyzers",
     "defaultName": "Library",

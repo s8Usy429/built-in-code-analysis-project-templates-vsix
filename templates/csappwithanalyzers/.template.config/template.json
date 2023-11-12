@@ -7,9 +7,9 @@
         "type": "project"
     },
     "identity": "0b58716f-0f16-4294-90cf-216ff1526921",
-    "groupIdentity": "appwithanalyzers",
-    "shortName": "appwithanalyzers",
-    "name" : "Console App with built-in code analysis",
+    "groupIdentity": "csapp",
+    "shortName": "csapp",
+    "name" : "Console application with built-in code analysis",
     "description": "A project for creating a command-line application with recommended code analyzers already installed (.NET analyzers, SonarAnalyzer and Roslynator)",
     "sourceName": "csappwithanalyzers",
     "defaultName": "ConsoleApp",
