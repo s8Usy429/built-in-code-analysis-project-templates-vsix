@@ -1,0 +1,6 @@
+[**.cs]
+
+# SA1600 : Elements should be documented
+# CS1591 : Elements should be documented
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.CS1591.severity = none

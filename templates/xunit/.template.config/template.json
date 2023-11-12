@@ -31,11 +31,20 @@
             ],
             "replaces": "net7.0",
             "defaultValue": "net7.0"
+        },
+        "CompanyName": {
+            "displayName": "Company name",
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "MyCompanyName",
+            "replaces": "MyCompanyName"
         }
     },
     "primaryOutputs": [
         { "path": "xtestproj.csproj" },
-        { "path": "UnitTest1.cs" }
+        { "path": "UnitTest1.cs" },
+        { "path": ".editorconfig" },
+        { "path": "stylecop.json" }
     ],
     "postActions": [
         {
